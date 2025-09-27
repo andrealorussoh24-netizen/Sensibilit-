@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabella di Sensibilità per Valutazione Immobiliare</title>
+    <title>Tabella di sensibilità di rendimento</title>
     <!-- Link al CDN di Tailwind CSS per lo stile -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Stili personalizzati -->
@@ -25,60 +25,60 @@
 
     <div class="container">
         <div class="text-center mb-8">
-            <h1 class="text-3xl font-bold text-white">Analisi di Sensibilità per Investimenti Immobiliari</h1>
+            <h1 class="text-3xl font-bold text-white">Analisi di sensibilità per investimenti immobiliari</h1>
         </div>
 
         <!-- PANNELLO DI CONTROLLO -->
         <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 mb-8">
-             <h2 class="text-xl font-semibold text-center mb-6">Parametri di Base per la Simulazione</h2>
+             <h2 class="text-xl font-semibold text-center mb-6">Parametri di base per la simulazione</h2>
              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Parametri Principali -->
                 <div class="space-y-4">
-                    <h3 class="font-semibold border-b pb-2">Dati di Mercato</h3>
+                    <h3 class="font-semibold border-b pb-2">Dati di mercato</h3>
                     <div>
-                        <label for="adr" class="block text-sm font-medium text-gray-700">Tariffa Media Base (€)</label>
+                        <label for="adr" class="block text-sm font-medium text-gray-700">Tariffa media base (€)</label>
                         <input type="number" id="adr" value="125" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
                     </div>
                     <div>
-                        <label for="occupazione" class="block text-sm font-medium text-gray-700">Occupazione Base (%)</label>
+                        <label for="occupazione" class="block text-sm font-medium text-gray-700">Occupazione base (%)</label>
                         <input type="number" id="occupazione" value="65" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
                     </div>
                 </div>
                 <!-- Costi -->
                  <div class="space-y-4">
-                    <h3 class="font-semibold border-b pb-2">Stima Costi per Proprietà</h3>
+                    <h3 class="font-semibold border-b pb-2">Stima Costi per proprietà</h3>
                      <div>
                         <label for="commissioni" class="block text-sm font-medium text-gray-700">Commissioni OTA (%)</label>
                         <input type="number" id="commissioni" value="15" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
                     </div>
                      <div>
-                        <label for="costi_operativi_perc" class="block text-sm font-medium text-gray-700">Costi Operativi Variabili (% su Ricavi)</label>
+                        <label for="costi_operativi_perc" class="block text-sm font-medium text-gray-700">Costi operativi variabili (% su Ricavi)</label>
                         <input type="number" id="costi_operativi_perc" value="25" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
                     </div>
                      <div>
-                        <label for="costi_fissi_annui" class="block text-sm font-medium text-gray-700">Costi Fissi Annui (€)</label>
+                        <label for="costi_fissi_annui" class="block text-sm font-medium text-gray-700">Costi fissi annui (€)</label>
                         <input type="number" id="costi_fissi_annui" value="5000" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
                     </div>
                 </div>
                 <!-- Parametri di Valutazione -->
                 <div class="space-y-4">
-                    <h3 class="font-semibold border-b pb-2">Parametri di Valutazione</h3>
+                    <h3 class="font-semibold border-b pb-2">Parametri di valutazione</h3>
                     <div>
-                        <label for="capRate" class="block text-sm font-medium text-gray-700">Il Tuo Cap Rate Obiettivo (%)</label>
+                        <label for="capRate" class="block text-sm font-medium text-gray-700">Il tuo Cap rate obiettivo (%)</label>
                          <input type="range" id="capRate" min="5" max="10" value="8" step="0.25" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer mt-2">
                         <div class="text-right text-sm font-bold text-[#5A8A7B]"><span id="capRateVal">8.00</span>%</div>
                     </div>
                     <div>
-                        <label for="percAffitto" class="block text-sm font-medium text-gray-700">Il Tuo Margine da Sublocazione (%)</label>
+                        <label for="percAffitto" class="block text-sm font-medium text-gray-700">Il tuo margine da sublocazione (%)</label>
                         <input type="range" id="percAffitto" min="40" max="70" value="55" step="1" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer mt-2">
                         <div class="text-right text-sm font-bold text-[#5A8A7B]"><span id="percAffittoVal">55</span>%</div>
                     </div>
                 </div>
-                 <!-- Dati Struttura (semplificati) -->
+                 <!-- Dati struttura (semplificati) -->
                  <div class="space-y-4">
-                     <h3 class="font-semibold border-b pb-2">Dati Struttura</h3>
+                     <h3 class="font-semibold border-b pb-2">Dati struttura</h3>
                       <div>
-                        <label for="periodoApertura" class="block text-sm font-medium text-gray-700">Periodo di Apertura (mesi)</label>
+                        <label for="periodoApertura" class="block text-sm font-medium text-gray-700">Periodo di apertura (mesi)</label>
                         <input type="number" id="periodoApertura" value="12" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
                     </div>
                  </div>
@@ -87,9 +87,9 @@
 
         <!-- MATRICE DI VALUTAZIONE -->
         <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 mt-8">
-            <h2 class="text-xl font-semibold text-center text-gray-700 mb-2">Matrice di Valutazione Dinamica</h2>
+            <h2 class="text-xl font-semibold text-center text-gray-700 mb-2">Matrice di valutazione dinamica</h2>
             <p class="text-center text-gray-600 text-sm mb-6">
-                La tabella mostra le stime di acquisto (verde) e affitto annuo (blu) al variare di ADR e Occupazione.
+                La tabella mostra le stime di acquisto (verde) e affitto annuo (blu) al variare di ADR e occupazione.
             </p>
             <div class="overflow-x-auto">
                 <table class="w-full text-sm text-left text-gray-500">
