@@ -9,7 +9,7 @@
     <!-- Stili personalizzati -->
     <style>
         body {
-            background-color: #506552;
+            background-color: #506552; /* SFONDO VERDE APPLICATO A TUTTA LA PAGINA */
         }
         .container {
             max-width: 1400px;
@@ -21,7 +21,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-100">
+<body>
 
     <div class="container">
         <div class="text-center mb-8">
@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if(cell) {
                     cell.innerHTML = `
                         <div class="flex flex-col leading-tight">
-                            <span class="font-semibold text-green-700">${formatCurrency(offertaAcquisto, true)}</span>
+                            <span class="text-xs text-green-700">Acq: ${formatCurrency(offertaAcquisto, true)}</span>
                             <span class="text-xs text-blue-700 mt-1">Aff: ${formatCurrency(affittoAnnuo, true)}</span>
                         </div>
                     `;
